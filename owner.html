@@ -12,6 +12,11 @@
   <link rel="stylesheet" href="css/admin.css">
   <link rel="stylesheet" href="css/animations.css">
   <script src="javascript/theme.js"></script>
+  <!-- ── Vercel Speed Insights ── -->
+  <script type="module">
+    import { injectSpeedInsights } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@2.0.0/dist/index.mjs';
+    injectSpeedInsights();
+  </script>
   <script>
     /* ── Owner-only guard ── */
     (function () {
@@ -182,7 +187,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 
   <script>
-    /* ════════════════════════════════════════════════════════
+    /* ═���══════════════════════════════════════════════════════
        Digispex — owner.html   (pure localStorage, no backend)
        Read-only sales view for the Owner role.
     ════════════════════════════════════════════════════════ */
