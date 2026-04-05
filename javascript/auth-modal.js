@@ -65,7 +65,7 @@ function openLoginModal() {
     _clearErrors('login');
     modal.classList.add('open');
   } else {
-    window.location.href = '../html/login.html';
+    window.location.href = 'login.html';
   }
 }
 function closeLoginModal() {
@@ -79,7 +79,7 @@ function openRegisterModal() {
     _clearErrors('reg');
     modal.classList.add('open');
   } else {
-    window.location.href = '../html/register.html';
+    window.location.href = 'register.html';
   }
 }
 function closeRegisterModal() {
@@ -282,15 +282,12 @@ async function handleLogin(e) {
     if (typeof SB !== 'undefined') await SB.pull();
 
     /*  Role-based redirect  */
-    const isSubFolder = window.location.pathname.includes('/html/');
-    const pathPrefix = isSubFolder ? '' : 'html/';
-    
     if (role === 'admin') {
-      window.location.href = pathPrefix + 'admin.html';
+      window.location.href = 'admin.html';
       return;
     }
     if (role === 'owner') {
-      window.location.href = pathPrefix + 'owner.html';
+      window.location.href = 'owner.html';
       return;
     }
 
